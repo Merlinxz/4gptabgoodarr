@@ -1,0 +1,153 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 20px;
+    /* Add padding to the body */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f8f9fa;
+}
+
+.container {
+    text-align: center;
+    background-color: #ffffff;
+    padding: 5%;
+    /* Use percentage-based padding for better responsiveness */
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    max-width: 500px;
+    width: 100%;
+    overflow: hidden;
+}
+
+h2 {
+    color: #007bff;
+    margin-bottom: 20px;
+}
+
+.input-section {
+    margin-top: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+    color: #495057;
+    font-size: 16px;
+}
+
+select,
+input {
+    width: 100%;
+    /* Use 100% width for input fields */
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 1px solid #ced4da;
+    border-radius: 6px;
+    box-sizing: border-box;
+}
+
+
+/* Improved style for the select element */
+
+select {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background-color: #f8f9fa;
+    color: #495057;
+    padding: 12px;
+    border: 1px solid #ced4da;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+
+/* Style for the selected option */
+
+select option:checked {
+    background-color: #007bff;
+    color: #fff;
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+    cursor: pointer;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.result-container {
+    margin-top: 20px;
+    max-height: 200px;
+    overflow-y: auto;
+    scrollbar-width: thin;
+    scrollbar-color: transparent transparent;
+    position: relative;
+}
+
+
+/* Hide the button initially */
+
+.copy-button {
+    display: none;
+}
+
+
+/* Style for the "Copy Result" button */
+
+.copy-button.show {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 8px 16px;
+    cursor: pointer;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    transition: background-color 0.3s;
+}
+
+.copy-button.show:hover {
+    background-color: #0056b3;
+}
+
+
+/* Hide the button initially */
+
+.result-container button {
+    display: none;
+}
+
+
+/* Style for the button when it's shown */
+
+.result-container button.show {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 8px 16px;
+    cursor: pointer;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    transition: background-color 0.3s;
+}
+
+.result-container button.show:hover {
+    background-color: #0056b3;
+}

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Converter</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h2>Data Converter</h2>
+        </header>
+        <section class="input-section">
+            <!-- Conversion Type Selection -->
+            <label for="conversionType">Choose Conversion Type:</label>
+            <select id="conversionType" onchange="updateInputLabel()">
+                <option value="textToBinary">Text to Binary</option>
+                <option value="textToDecimal">Text to Decimal</option>
+                <option value="textToHex">Text to Hex</option>
+                <option value="binaryToText">Binary to Text</option>
+                <option value="binaryToDecimal">Binary to Decimal</option>
+                <option value="decimalToBinary">Decimal to Binary</option>
+                <option value="decimalToHex">Decimal to Hex</option>
+                <option value="decimalToText">Decimal to Text</option>
+                <option value="hexToText">Hex to Text</option>
+                <option value="hexToDecimal">Hex to Decimal</option>                
+            </select>
+            <!-- Input Section -->
+            <div class="input-container">
+                <label for="textInput" id="textInputLabel">Enter Text:</label>
+                <input type="text" id="textInput" placeholder="">
+                <button onclick="convertData()">Convert</button>
+            </div>
+        </section>
+        <!-- Result Section -->
+        <section class="result-section">
+            <div class="result-container">
+                <strong>Result:</strong>
+                <p id="result"></p>
+                <button class="copy-button" onclick="copyToClipboard()">Copy Result</button>
+            </div>
+        </section>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
